@@ -12,7 +12,7 @@ app.use(cors())
 // let tasks =[]
 
 //connecting mongodb
-mongoose.connect('mongodb://localhost:27017/mern-app')
+mongoose.connect(process.env.MONGO_URI)
 .then(() =>{
     console.log("DB Connected!")
 })

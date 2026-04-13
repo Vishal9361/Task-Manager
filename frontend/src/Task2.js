@@ -11,7 +11,7 @@ export default function Task1() {
   const [editTitle, setEditTitle] = useState("");
   const [editDescription, setEditDescription] = useState("");
 
-  const apiUrl = "http://localhost:8000";
+  const apiUrl = "https://task-manager-r1b1.onrender.com";
 
   useEffect(() => {
     getItems();
